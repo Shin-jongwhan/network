@@ -62,6 +62,20 @@
 ```
 ### <br/>
 
+### local 주소는 'lo'로 표현된다.
+- inet xx.xx.xx.xx : 일반적으로 127.0.0.1로 표현됨(이게 아닌 건 나도 본 적이 없다).
+```
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet xx.xx.xx.xx  netmask 255.0.0.0
+        inet6 xxxx  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 15733  bytes 1455939 (1.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 15733  bytes 1455939 (1.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
+### <br/>
+
 ### 장점
 - 물리 NIC 없이도 트래픽 라우팅 가능
 - 성능 테스트, 네트워크 분리, 보안 환경 구축 등에 매우 유용
